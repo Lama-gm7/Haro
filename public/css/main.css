@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 1rem 2rem; /* Usa rem en lugar de px */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    width: 8rem; /* Escalable en base al tamaño de fuente */
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    font-size: 8.5rem; /* Más proporcional */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+/* Menú desplegable */
+.menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 5%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 50vw; /* Usa vw en lugar de px */
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Estilos de los enlaces */
+.menu a {
+    font-size: 1.2rem; /* En lugar de px, escalable */
+    padding: 0.8rem;
+}
