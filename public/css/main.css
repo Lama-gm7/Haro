@@ -1,53 +1,253 @@
-header {
+/* ============================================
+   Reset y estilos globales
+============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color:rgb(247, 231, 210);
+  }
+  
+  /* ============================================
+     Header y Navegación
+  ============================================ */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
-    color: white;
-    padding: 1rem 2rem; /* Usa rem en lugar de px */
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 1000;
-}
-
-/* Logo */
-.logo img {
-    width: 8rem; /* Escalable en base al tamaño de fuente */
-}
-
-/* Menú hamburguesa */
-.menu-toggle {
-    font-size: 8.5rem; /* Más proporcional */
-    cursor: pointer;
+  }
+  
+  header .logo img {
+    width: 70px; /* Logo pequeño */
+    height: auto;
+  }
+  
+  /* Menú y botón hamburguesa */
+  nav {
+    position: relative;
+  }
+  
+  .menu-toggle {
     background: none;
     border: none;
-    padding: 0.5rem;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    z-index: 1001;
-}
-
-/* Menú desplegable */
-.menu {
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto al pulsar el botón (puedes ajustar con JS para agregar/quitar clases) */
+  .menu-toggle:active {
+    transform: scale(0.95);
+  }
+  
+  .menu {
     list-style: none;
-    display: none;
+    display: none; /* Oculto por defecto en móviles */
     position: absolute;
-    top: 4rem;
-    right: 5%;
+    top: 50px;
+    right: 0;
     background: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
-    border-radius: 10px;
-    width: 50vw; /* Usa vw en lugar de px */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    background: #444;
+  }
+  
+  /* ============================================
+     Sección Hero
+  ============================================ */
+  .hero-section {
+    height: 100vh; /* Pantalla completa */
+    background-image: url(../../public/img/galeria/imagenHero.2.png); /* Ajusta la ruta a tu imagen hero */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Overlay para mejorar la legibilidad del texto */
+  }
+  
+  .hero-content {
+    position: relative;
     text-align: center;
-    z-index: 1000;
-}
-
-/* Estilos de los enlaces */
-.menu a {
-    font-size: 1.2rem; /* En lugar de px, escalable */
-    padding: 0.8rem;
-}
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .btn {
+    display: inline-block;
+    background: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-content .btn:hover {
+    background: #d62828;
+  }
+  
+  /* ============================================
+     Sección Carrusel
+  ============================================ */
+  .carousel-section {
+    padding: 40px 20px;
+    background: #f4f4f4;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Nota: La funcionalidad del desplazamiento automático se implementará con JS */
+  
+  /* ============================================
+     Sección Recomendaciones
+  ============================================ */
+  .recomendaciones-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .recomendaciones-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .recomendaciones-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .recomendacion {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recomendacion img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .recomendacion h3 {
+    font-size: 1.25rem;
+    margin: 10px;
+  }
+  
+  .recomendacion p {
+    font-size: 1rem;
+    margin: 0 10px 10px;
+  }
+  
+  .recomendaciones-section .btn {
+    display: inline-block;
+    background: #457b9d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .recomendaciones-section .btn:hover {
+    background: #1d3557;
+  }
+  
+  /* ============================================
+     Footer
+  ============================================ */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  /* ============================================
+     Media Queries para pantallas más grandes
+  ============================================ */
+  @media (min-width: 768px) {
+    /* Mostrar menú en línea y ocultar botón hamburguesa */
+    .menu {
+      display: flex;
+      position: static;
+      background: none;
+      flex-direction: row;
+    }
+    .menu li a {
+      padding: 10px 15px;
+    }
+    .menu-toggle {
+      display: none;
+    }
+    
+    /* Recomendaciones en fila */
+    .recomendaciones-container {
+      flex-direction: row;
+    }
+    
+    .recomendacion {
+      flex: 1;
+    }
+  }

@@ -3,7 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=, initial-scale=1.0">
         <link rel="stylesheet" href="public/css/main.css">
-        <title>HARO</title>
+        <link rel="icon" type="image/png" href="public/img/icons/mainlogo.png">
+        <title>Haro - Inicio</title>
     </head>
     <body>
         <header>
@@ -13,27 +14,83 @@
         
             <nav>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-                    <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="8" stroke-linecap="round">
+                    <svg width="30" height="30" viewBox="0 0 100 100" fill="none" 
+                    stroke="white" stroke-width="8" stroke-linecap="round">
                         <line x1="10" y1="30" x2="90" y2="30"></line>
                         <line x1="10" y1="50" x2="90" y2="50"></line>
                         <line x1="10" y1="70" x2="90" y2="70"></line>
                     </svg>
                 </button>
                 <ul class="menu" id="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#carta">Carta</a></li>
-                    <li><a href="#reserva">Reserva</a></li>
-                    <li><a href="#ordena">Ordena</a></li>
-                </ul>
-            </nav>
-        </header>
-            <section>
-                
-
-            </section>
-            <section>
-
-                
-            </section>
-    </body>
-</html>
+                    <li><a href="#hero">Inicio</a></li>
+                    <!-- Las siguientes secciones son páginas separadas -->
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="ordena.html">Ordena</a></li>
+                  </ul>
+                </nav>
+              </header>
+            
+              <main>
+                <!-- Sección Hero: Fondo de imagen vertical, slogan y botón CTA para reservar -->
+                <section id="hero" class="hero-section">
+                  <!-- La imagen de fondo se definirá mediante CSS (background-image) -->
+                  <div class="hero-content">
+                    <h1>Sabores andaluces con un toque moderno</h1>
+                    <a href="reserva.html" class="btn">Reservar Ahora</a>
+                  </div>
+                </section>
+            
+                <!-- Sección Carrusel: Imágenes del restaurante y experiencia culinaria -->
+                <section id="carousel" class="carousel-section">
+                  <div class="carousel-container">
+                    <div class="carousel-slide">
+                      <img src="public/img/restaurant1.jpg" alt="Ambiente del restaurante 1">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="public/img/restaurant2.jpg" alt="Ambiente del restaurante 2">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="public/img/restaurant3.jpg" alt="Ambiente del restaurante 3">
+                    </div>
+                  </div>
+                  <!-- Nota: La funcionalidad de desplazamiento automático se implementará con JS/CSS -->
+                </section>
+            
+                <!-- Sección Recomendaciones: Postres, bebidas y platos destacados -->
+                <section id="recomendaciones" class="recomendaciones-section">
+                  <h2>Recomendaciones</h2>
+                  <div class="recomendaciones-container">
+                    <article class="recomendacion">
+                      <img src="public/img/recomendacion1.jpg" alt="Postre especial">
+                      <h3>Postre Especial</h3>
+                      <p>Delicioso postre que no puedes dejar de probar.</p>
+                    </article>
+                    <article class="recomendacion">
+                      <img src="public/img/recomendacion2.jpg" alt="Bebida refrescante">
+                      <h3>Bebida Refrescante</h3>
+                      <p>La bebida perfecta para acompañar tu comida.</p>
+                    </article>
+                    <article class="recomendacion">
+                      <img src="public/img/recomendacion3.jpg" alt="Plato destacado">
+                      <h3>Plato Destacado</h3>
+                      <p>Un plato lleno de sabor y tradición.</p>
+                    </article>
+                  </div>
+                  <a href="carta.html" class="btn">Ver carta completa</a>
+                </section>
+              </main>
+            
+              <!-- Footer con información de horarios -->
+              <footer>
+                <div class="footer-info">
+                  <p><strong>Horarios:</strong></p>
+                  <p>Lunes a Sábados: 12:00 - 17:00</p>
+                  <p>Domingos: 20:00 - 23:30</p>
+                </div>
+                <p>&copy; 2025 HARO</p>
+              </footer>
+            
+              <script src="public/js/main.js"></script>
+            </body>
+            </html>
