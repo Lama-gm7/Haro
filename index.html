@@ -4,13 +4,16 @@
         <meta name="viewport" content="width=, initial-scale=1.0">
         <link rel="stylesheet" href="public/css/main.css">
         <link rel="icon" type="image/png" href="public/img/icons/mainlogo.png">
+        <script src="public/js/main.js" defer></script>
         <title>Haro - Inicio</title>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="public/img/icons/mainlogo.png" alt="Logo del restaurante">
-            </div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="public/img/icons/mainlogo.png" alt="Logo del restaurante HARO">
+            </a>
+          </div>
         
             <nav>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
@@ -36,27 +39,43 @@
                 <section id="hero" class="hero-section">
                   <!-- La imagen de fondo se definirá mediante CSS (background-image) -->
                   <div class="hero-content">
-                    <h1>Sabores andaluces con un toque moderno</h1>
+                    <h1>¿Listo para probar algo nuevo?</h1>
                     <a href="reserva.html" class="btn">Reservar Ahora</a>
                   </div>
                 </section>
-            
-                <!-- Sección Carrusel: Imágenes del restaurante y experiencia culinaria -->
-                <section id="carousel" class="carousel-section">
-                  <div class="carousel-container">
-                    <div class="carousel-slide">
-                      <img src="public/img/restaurant1.jpg" alt="Ambiente del restaurante 1">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="public/img/restaurant2.jpg" alt="Ambiente del restaurante 2">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="public/img/restaurant3.jpg" alt="Ambiente del restaurante 3">
-                    </div>
-                  </div>
-                  <!-- Nota: La funcionalidad de desplazamiento automático se implementará con JS/CSS -->
+            <!-- Sección Hero existente -->
+
+                <!-- NUEVA SECCIÓN DE TEXTO -->
+                <section id="intro-text" class="intro-text-section">
+                  <h2>Sabores auténticos, experiencias inolvidables</h2>
+                  <hr class="divider">
+                  <p>
+                    En Haro, combinamos tradición y creatividad para ofrecerte una experiencia gastronómica única.
+                    Cada plato está elaborado con ingredientes seleccionados y un toque moderno que realza los sabores andaluces.
+                  </p>
                 </section>
-            
+
+                <!-- Sección Carrusel: Imágenes del restaurante y experiencia culinaria -->
+                  <section id="carousel" class="carousel-section">
+                    <div class="carousel-container" id="carousel-container">
+                      <div class="carousel-slide">
+                        <img src="public/img/galeria/restaurant1.png" alt="Ambiente del restaurante 1">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="public/img/galeria/restaurant2.png" alt="Ambiente del restaurante 2">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="public/img/galeria/restaurant3.png" alt="Ambiente del restaurante 3">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="public/img/carta/vino.png" alt="Ambiente del restaurante 4">
+                      </div>
+                    </div>
+
+                    <!-- Flechas de navegación -->
+                    <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+                    <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+                  </section>
                 <!-- Sección Recomendaciones: Postres, bebidas y platos destacados -->
                 <section id="recomendaciones" class="recomendaciones-section">
                   <h2>Recomendaciones</h2>
