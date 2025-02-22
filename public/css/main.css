@@ -30,7 +30,7 @@
   }
   
   header .logo img {
-    width: 70px; /* Logo pequeño */
+    width: 72px; /* Logo pequeño */
     height: auto;
   }
   
@@ -45,6 +45,16 @@
     cursor: pointer;
     outline: none;
     transition: transform 0.3s ease;
+    width: 60px;  /* Similar al logo (p.ej. 40px, 60px, etc.) */
+    height: 50px;
+  }
+  .menu-toggle svg {
+    width: 100%;
+    height: 100%;
+  }
+  .menu-toggle svg line {
+    stroke-width: 6; /* Grosor de lineas */
+    stroke: rgb(229, 229, 229);
   }
   
   /* Efecto al pulsar el botón (puedes ajustar con JS para agregar/quitar clases) */
@@ -113,14 +123,14 @@
   
   .hero-content .btn {
     display: inline-block;
-    background: #e63946;
+    background: #C74F4F; /* Antiguo color: e63946 */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1rem;
     border-radius: 5px;
     transition: background 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   @media (min-width: 768px) {
     .hero-content h1 {
@@ -267,7 +277,7 @@
   
   .recomendaciones-section .btn {
     display: inline-block;
-    background: #457b9d;
+    background: #C79750;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -276,22 +286,105 @@
   }
   
   .recomendaciones-section .btn:hover {
-    background: #1d3557;
+    background: #D4A373; /* Primer color: 1d3557 (claro, como regalan espacio...) */
+
   }
   
-  /* ============================================
-     Footer
-  ============================================ */
+/* ============================================
+   Footer
+============================================ */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Centra texto en móviles */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* En móviles, columnas apiladas */
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Logo en footer con ancho 12rem */
+footer .footer-content .footer-col .logo-footer img {
+  width: 12rem;
+  height: auto;
+}
+
+/* Título de la columna */
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+
+/* Texto y enlaces dentro del footer */
+.footer-col p,
+.footer-col a,
+footer p,
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+/* Hover en enlaces */
+footer a:hover {
+  text-decoration: underline;
+}
+
+.external-link-icon {
+  filter: invert(1);
+}
+
+/* Icono de enlace externo */
+.external-link-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;       /* Separa icono del texto */
+  vertical-align: middle; /* Alinea con el texto */
+}
+
+
+/* Redes sociales */
+.social-icons img {
+  vertical-align: middle;
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+}
+.social-icons a {
+  margin-right: 9px; /* Aumenta el espacio entre cada icono */
+  margin-left: 9px;
+}
+footer > p {
+  margin-top: 20px; /* Ajusta a tu gusto (20px, 30px, etc.) */
+}
+footer p a[href="aviso-legal.html"] {
+  font-weight: 600;   /* Negrita moderada */
+  color: #ddd;        /* Un gris claro, ajusta a tu gusto */
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
   footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    text-align: left; /* Alineación izquierda en escritorio */
   }
-  
-  footer p {
-    margin: 5px 0;
+
+  .footer-content {
+    flex-direction: row; /* Distribuye en fila */
+    justify-content: space-around;
+    align-items: flex-start;
   }
+  /* Selecciona la segunda columna (Horarios) */
+  .footer-col:nth-child(2) {
+    padding-right: 20px;          /* Espacio para que la línea no pegue al texto */
+    margin-right: 20px;           /* Espacio entre la línea y la 3ª columna */
+  }
+
+}
+
+
   
   /* ============================================
      Media Queries para pantallas más grandes

@@ -34,7 +34,7 @@ prevBtn.addEventListener('click', () => {
 // Auto-play (cada 4s)
 let autoPlayInterval = setInterval(() => {
   showSlide(currentIndex + 1);
-}, 4000);
+}, 4500);
 
 // Pausar auto-play al hacer hover o clic (opcional)
 carouselContainer.addEventListener('mouseenter', () => {
@@ -43,5 +43,5 @@ carouselContainer.addEventListener('mouseenter', () => {
 carouselContainer.addEventListener('mouseleave', () => {
   autoPlayInterval = setInterval(() => {
     showSlide(currentIndex + 1);
-  }, 4000);
+  }, 4500);
 });

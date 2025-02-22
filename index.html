@@ -3,18 +3,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=, initial-scale=1.0">
         <link rel="stylesheet" href="public/css/main.css">
-        <link rel="icon" type="image/png" href="public/img/icons/mainlogo.png">
+        <link rel="icon" type="image/png" href="public/img/icons/mainlogo-blanco.png">
         <script src="public/js/main.js" defer></script>
         <title>Haro - Inicio</title>
     </head>
     <body>
+
         <header>
           <div class="logo">
             <a href="index.html">
-              <img src="public/img/icons/mainlogo.png" alt="Logo del restaurante HARO">
+              <img src="public/img/icons/mainlogo-blanco.png" alt="Logo del restaurante HARO">
             </a>
           </div>
-        
+          <!-- ?? -qué hacés leyendo esto?-->
             <nav>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
                     <svg width="30" height="30" viewBox="0 0 100 100" fill="none" 
@@ -26,7 +27,7 @@
                 </button>
                 <ul class="menu" id="menu">
                     <li><a href="#hero">Inicio</a></li>
-                    <!-- Las siguientes secciones son páginas separadas -->
+                    <!-- Desactivar botón solo si estás en dicha página-->
                     <li><a href="carta.html">Carta</a></li>
                     <li><a href="reserva.html">Reserva</a></li>
                     <li><a href="ordena.html">Ordena</a></li>
@@ -35,27 +36,27 @@
               </header>
             
               <main>
-                <!-- Sección Hero: Fondo de imagen vertical, slogan y botón CTA para reservar -->
+                <!-- Sección Hero: Fondo de imagen vertical, slogan y botón CTA para reservar (lo más putas god)-->
                 <section id="hero" class="hero-section">
-                  <!-- La imagen de fondo se definirá mediante CSS (background-image) -->
+                  <!-- La imagen de fondo se definirá mediante CSS (background-image) pd: joder sí quedó god-->
                   <div class="hero-content">
-                    <h1>¿Listo para probar algo nuevo?</h1>
+                    <h1>Tú pones la compañía, nosotros el sabor.</h1>
                     <a href="reserva.html" class="btn">Reservar Ahora</a>
                   </div>
                 </section>
-            <!-- Sección Hero existente -->
-
-                <!-- NUEVA SECCIÓN DE TEXTO -->
+                <!-- Sección de texto que seguramente borre (o cambie mucho) -->
                 <section id="intro-text" class="intro-text-section">
-                  <h2>Sabores auténticos, experiencias inolvidables</h2>
+                  <h2>Donde el sabor cobra vida</h2>
                   <hr class="divider">
                   <p>
-                    En Haro, combinamos tradición y creatividad para ofrecerte una experiencia gastronómica única.
-                    Cada plato está elaborado con ingredientes seleccionados y un toque moderno que realza los sabores andaluces.
+                    Haro nace desde la pasión por el buen vino y la tradición andaluza. 
+                    Cada plato honra el legado de la ciudad que nos inspira, ofreciendo una experiencia cálida y sofisticada.
+
+
                   </p>
                 </section>
 
-                <!-- Sección Carrusel: Imágenes del restaurante y experiencia culinaria -->
+                <!-- Sección Carrusel: Imágenes del restaurante y experiencia -->
                   <section id="carousel" class="carousel-section">
                     <div class="carousel-container" id="carousel-container">
                       <div class="carousel-slide">
@@ -72,44 +73,122 @@
                       </div>
                     </div>
 
-                    <!-- Flechas de navegación -->
+                    <!-- Flechitas de navegación -->
                     <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
                     <button class="carousel-btn next" id="nextBtn">&#10095;</button>
                   </section>
-                <!-- Sección Recomendaciones: Postres, bebidas y platos destacados -->
+                <!-- Sección Recomendaciones-->
                 <section id="recomendaciones" class="recomendaciones-section">
                   <h2>Recomendaciones</h2>
                   <div class="recomendaciones-container">
                     <article class="recomendacion">
-                      <img src="public/img/recomendacion1.jpg" alt="Postre especial">
-                      <h3>Postre Especial</h3>
-                      <p>Delicioso postre que no puedes dejar de probar.</p>
+                      <img src="public/img/carta/cheesecake.png" alt="Tarta de queso">
+                      <h3>Tarta de queso</h3>
+                      <p>Tostada por fuera y cremosa por dentro... 
+                      Nuestra tarta de queso es perfecta para cualquier ocasión, promete endulzar tu día y dejarte con ganas de más..🤤</p>
                     </article>
+
                     <article class="recomendacion">
-                      <img src="public/img/recomendacion2.jpg" alt="Bebida refrescante">
-                      <h3>Bebida Refrescante</h3>
-                      <p>La bebida perfecta para acompañar tu comida.</p>
-                    </article>
-                    <article class="recomendacion">
-                      <img src="public/img/recomendacion3.jpg" alt="Plato destacado">
-                      <h3>Plato Destacado</h3>
-                      <p>Un plato lleno de sabor y tradición.</p>
+                      <img src="public/img/carta/cachopo.png" alt="Plato destacado">
+                      <h3>Cachopo</h3>
+                      <p>Crujiente por fuera, jugoso por dentro y con el queso fundiéndose en cada bocado. 
+                      Nuestro cachopo es el placer definitivo para los amantes de la buena carne. ¿Te atreves a probarlo? 🥩🔥</p>
                     </article>
                   </div>
                   <a href="carta.html" class="btn">Ver carta completa</a>
                 </section>
               </main>
-            
-              <!-- Footer con información de horarios -->
-              <footer>
-                <div class="footer-info">
-                  <p><strong>Horarios:</strong></p>
-                  <p>Lunes a Sábados: 12:00 - 17:00</p>
-                  <p>Domingos: 20:00 - 23:30</p>
-                </div>
-                <p>&copy; 2025 HARO</p>
-              </footer>
-            
-              <script src="public/js/main.js"></script>
-            </body>
-            </html>
+        <!-- Footer v3 -->
+        <footer>
+          <div class="footer-content">
+            <!-- Columna 1: Logo -->
+            <div class="footer-col">
+              <div class="logo-footer" id="logo-footer">
+                <img 
+                  src="public/img/icons/mainlogo-blanco.png" 
+                  alt="Logo del restaurante HARO"
+                >
+              </div>
+            </div>
+
+            <!-- Columna 2: Horarios y dirección -->
+            <div class="footer-col">
+              <h4>Horarios</h4>
+              <p>Lun-Sáb: 12:00 - 17:00 y 20:00 - 23:30</p>
+              <p>Dom: 12:00 - 17:00</p>
+              <p>
+                <a 
+                  href="https://maps.app.goo.gl/dJPYAA2psBdtAtx46" 
+                  target="_blank" 
+                  rel="noopener" 
+                  class="footer-address-link"
+                >
+                  Plaza Campillo del Moro, 5, Aguadulce
+                  <!-- Icono de enlace externo al final -->
+                  <img 
+                    src="public/img/icons/external-link-icon.png" 
+                    alt="Enlace externo" 
+                    class="external-link-icon"
+                  >
+                </a>
+              </p>
+            </div>
+
+            <!-- Columna 3: Contacto y redes -->
+            <div class="footer-col">
+              <h4>Contacto</h4>
+              <p>
+                <a href="tel:+34604849578">604 849 578</a>
+              </p>
+              <p>
+                <a href="mailto:hola@haroresto.com">hola@harorest.com</a>
+              </p>
+              <div class="social-icons">
+                <!-- Facebook -->
+                <a 
+                  href="https://www.facebook.com/people/Haro-Restaurante/61571198361926/" 
+                  target="_blank" 
+                  rel="noopener"
+                >
+                  <img 
+                    src="public/img/icons/facebook-white-icon.png" 
+                    alt="Facebook de HARO" 
+                    width="24" 
+                    height="24"
+                  >
+                </a>
+                <!-- Instagram -->
+                <a 
+                  href="https://www.instagram.com/haro.res/" 
+                  target="_blank" 
+                  rel="noopener"
+                >
+                  <img 
+                    src="public/img/icons/instagram-white-icon.png" 
+                    alt="Instagram de HARO" 
+                    width="24" 
+                    height="24"
+                  >
+                </a>
+                <!-- WhatsApp -->
+                <a 
+                  href="https://api.whatsapp.com/message/UQADI6WTO5DCB1?" 
+                  target="_blank" 
+                  rel="noopener"
+                >
+                  <img 
+                    src="public/img/icons/whatsapp-white-icon.png" 
+                    alt="Whatsapp de HARO" 
+                    width="24" 
+                    height="24"
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Copyright + Aviso Legal -->
+          <p>
+            &copy; 2025 HARO. Todos los derechos reservados |
+            <a href="aviso-legal.html">Aviso Legal</a>
+          </p>
+        </footer>
