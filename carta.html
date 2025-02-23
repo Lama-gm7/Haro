@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/carta.css">
+    <link rel="icon" type="image/png" href="public/img/icons/mainlogo-blanco.png">
+    <title>Haro - Carta</title>
+  </head>
+  <body>
+    <!-- ========== HEADER: Logo y Menú de Navegación ========== -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="public/img/icons/mainlogo-blanco.png" alt="Logo del restaurante HARO">
+        </a>
+      </div>
+      <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="8" stroke-linecap="round">
+            <line x1="10" y1="30" x2="90" y2="30"></line>
+            <line x1="10" y1="50" x2="90" y2="50"></line>
+            <line x1="10" y1="70" x2="90" y2="70"></line>
+          </svg>
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="#hero">Inicio</a></li>
+          <!-- Si ya estás en la página, desactivar botón -->
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="reserva.html">Reserva</a></li>
+          <li><a href="ordena.html">Ordena</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========== MAIN: Contenido Principal ========== -->
+    <main id="top">
+      <!-- Sección de Introducción -->
+      <section class="carta-intro">
+        <!-- Título principal -->
+        <h1>Nuestra Carta</h1>
+        <div>
+          <img src="public/img/icons/fork-spoon-icon.png" alt="Tenedor y cuchara">
+        </div>
+        <!-- Subtítulo -->
+        <p class="carta-subtitle">
+          Tradición andaluza con un giro moderno. Descubre nuestros platos y déjate sorprender.
+        </p>
+      </section>
+
+      <!-- Menú de pestañas (anclas) -->
+      <nav class="carta-tabs">
+        <ul>
+          <li><a href="#para-comer">Para Comer</a></li>
+          <li><a href="#vinos">Vinos</a></li>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#postres">Postres</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sección: Para Comer -->
+      <section id="para-comer" class="carta-category">
+        <h2>Para Comer</h2>
+
+        <!-- Subcategoría: Pequeños Bocados -->
+        <article class="carta-subcategory">
+          <h3>Pequeños Bocados</h3>
+          <div class="carta-platos">
+            <!-- Ejemplo de plato -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+            </div>
+            <!-- Plato: Albóndiga de pollo al curry rojo -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+            </div>
+            <!-- Plato: Bocatín de chorizo criollo -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Bocatín de chorizo criollo </h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">con mayonesa chimichurri</p>
+            </div>
+            <!-- Plato: Canelón de pollo y setas -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Canelón de pollo y setas</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Con bechamel gratinada</p>
+            </div>
+            <!-- Plato: Pinchito de pollo -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Pinchito de pollo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">con papas en manteca y especias</p>
+            </div>
+            <!-- Plato: Patatas bravas -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Patatas bravas </h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">con salsa chipotles y alioli</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Tenemos algo más -->
+        <article class="carta-subcategory">
+          <h3>Tenemos algo más</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Atún rojo marinado y verduritas salteadas en soja</h4>
+                <span class="precio">+ 1 €</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Brioche de pollo crujiente con crema chedar picante</h4>
+                <span class="precio"> + 2,20€</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Croqueta cremosa de jamón con ajoblanco de coco y papada ibérica</h4>
+                <span class="precio">+ 1 €</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Pan bao de costilla deshuesada a la bbq</h4>
+                <span class="precio">+ 2,50€</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Pepito de rabo de toro y zanahorita caramelizada</h4>
+                <span class="precio">+ 1,60€</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Tosta de queeso cremoso de cabra, salmón y frutos rojos</h4>
+                <span class="precio"> + 1,20€</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Seguimos con esto -->
+        <article class="carta-subcategory">
+          <h3>Seguimos con esto</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <!-- Se repite 5 veces -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Arroces por encargo -->
+        <article class="carta-subcategory">
+          <h3>Arroces por encargo</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <!-- Se repite 3 veces (más 7 platos en total) -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Plato 1</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Breve descripción...</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Botón "Volver arriba" -->
+        <div class="back-to-top">
+          <a href="#top">Volver arriba</a>
+        </div>
+      </section>
+
+      <!-- Sección: Vinos -->
+      <section id="vinos" class="carta-category">
+        <h2>Vinos</h2>
+        <!-- Subcategoría: Tintos -->
+        <article class="carta-subcategory">
+          <h3>Tintos</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <h4>Vino Tinto 1</h4>
+              <p class="descripcion">Breve descripción.</p>
+              <span class="precio">€15</span>
+            </div>
+            <!-- Se repiten otros vinos -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Blancos -->
+        <article class="carta-subcategory">
+          <h3>Blancos</h3>
+          <div class="carta-platos">
+            <!-- Se repiten vinos -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Alitas de pollo estilo Corea</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Rosados -->
+        <article class="carta-subcategory">
+          <h3>Rosados</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Espumosos -->
+        <article class="carta-subcategory">
+          <h3>Espumosos</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Botón "Volver arriba" -->
+        <div class="back-to-top">
+          <a href="#top">Volver arriba</a>
+        </div>
+      </section>
+
+      <!-- Sección: Bebidas -->
+      <section id="bebidas" class="carta-category">
+        <h2>Bebidas</h2>
+        <!-- Subcategoría: Cocktails -->
+        <article class="carta-subcategory">
+          <h3>Cocktails</h3>
+          <div class="carta-platos">
+            <!-- Más cocktails -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Cerveza -->
+        <article class="carta-subcategory">
+          <h3>Cerveza</h3>
+          <div class="carta-platos">
+            <!-- Platos para cerveza -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Albóndiga de pollo al curry rojo</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion"> El pollo lo hacemos albóndiga en curry rojo xd</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Refrescos -->
+        <article class="carta-subcategory">
+          <h3>Refrescos</h3>
+          <div class="carta-platos">
+            <!-- Plato para refrescos -->
+            <div class="plato">
+              <div class="plato-header">
+                <h4>Chicha morada</h4>
+                <span class="precio">€10</span>
+              </div>
+              <p class="descripcion">Unos 330ml</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Botón "Volver arriba" -->
+        <div class="back-to-top">
+          <a href="#top">Volver arriba</a>
+        </div>
+      </section>
+
+      <!-- Sección: Postres -->
+      <section id="postres" class="carta-category">
+        <h2>Postres</h2>
+        <!-- Subcategoría: Tartas -->
+        <article class="carta-subcategory">
+          <h3>Tartas</h3>
+          <div class="carta-platos">
+            <div class="plato">
+              <h4>Torta de queso</h4>
+              <p class="descripcion">Especialidad de la casa</p>
+              <span class="precio">€6</span>
+            </div>
+            <!-- Más tartas -->
+            <div class="plato">
+              <h4>Torta de queso</h4>
+              <p class="descripcion">Especialidad de la casa</p>
+              <span class="precio">€6</span>
+            </div>
+            <div class="plato">
+              <h4>Torta de queso</h4>
+              <p class="descripcion">Especialidad de la casa</p>
+              <span class="precio">€6</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategoría: Dulces variados -->
+        <article class="carta-subcategory">
+          <h3>Dulces variados</h3>
+          <div class="carta-platos">
+            <!-- Plato de dulces -->
+            <div class="plato">
+              <h4>Torta de queso</h4>
+              <p class="descripcion">Especialidad de la casa</p>
+              <span class="precio">€6</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Botón "Volver arriba" -->
+        <div class="back-to-top">
+          <a href="#top">Volver arriba</a>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción: Reserva -->
+      <section class="carta-cta">
+        <a href="reservas.html" class="cta-btn">
+          ¡Reserva tu mesa!
+        </a>
+      </section>
+    </main>
+    <script src="public/js/scrollspy.js"></script>
+  </body>
+  <!-- ========== FOOTER: Información, Contacto y Redes ========== -->
+  <footer>
+    <div class="footer-content">
+      <!-- Columna 1: Logo -->
+      <div class="footer-col">
+        <div class="logo-footer" id="logo-footer">
+          <img src="public/img/icons/mainlogo-blanco.png" alt="Logo del restaurante HARO">
+        </div>
+      </div>
+
+      <!-- Columna 2: Horarios y Dirección -->
+      <div class="footer-col">
+        <h4>Horarios</h4>
+        <p>Lun-Sáb: 12:00 - 17:00 y 20:00 - 23:30</p>
+        <p>Dom: 12:00 - 17:00</p>
+        <p>
+          <a href="https://maps.app.goo.gl/dJPYAA2psBdtAtx46" target="_blank" rel="noopener" class="footer-address-link">
+            Plaza Campillo del Moro, 5, Aguadulce
+            <!-- Icono de enlace externo -->
+            <img src="public/img/icons/external-link-icon.png" alt="Enlace externo" class="external-link-icon">
+          </a>
+        </p>
+      </div>
+
+      <!-- Columna 3: Contacto y Redes Sociales -->
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>
+          <a href="tel:+34604849578">604 849 578</a>
+        </p>
+        <p>
+          <a href="mailto:hola@haroresto.com">hola@harorest.com</a>
+        </p>
+        <div class="social-icons">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/people/Haro-Restaurante/61571198361926/" target="_blank" rel="noopener">
+            <img src="public/img/icons/facebook-white-icon.png" alt="Facebook de HARO" width="24" height="24">
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/haro.res/" target="_blank" rel="noopener">
+            <img src="public/img/icons/instagram-white-icon.png" alt="Instagram de HARO" width="24" height="24">
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://api.whatsapp.com/message/UQADI6WTO5DCB1?" target="_blank" rel="noopener">
+            <img src="public/img/icons/whatsapp-white-icon.png" alt="Whatsapp de HARO" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright y Aviso Legal -->
+    <p>
+      &copy; 2025 HARO. Todos los derechos reservados |
+      <a href="aviso-legal.html">Aviso Legal</a>
+    </p>
+  </footer>
+</html>
