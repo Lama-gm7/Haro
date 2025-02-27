@@ -4,222 +4,222 @@
 
 /* ---------- Global Styles ---------- */
 html {
-    scroll-behavior: smooth; /* (Esta propiedad podría ir inline en el HTML) */
+  scroll-behavior: smooth; /* (Esta propiedad podría ir inline en el HTML) */
 }
 body {
-    background-color: #FAF9F6;  /* Blanco roto */
-    color: #333;              /* Texto en gris oscuro */
+  background-color: #FAF9F6;  /* Blanco roto */
+  color: #333;              /* Texto en gris oscuro */
 }
 
 /* ---------- Container Principal ---------- */
 main {
-    padding: 1.25rem;   /* 20px */
-    margin-top: 3.5rem;
+  padding: 1.25rem;   /* 20px */
+  margin-top: 3.5rem;
 }
 
 /* ---------- Sección de Introducción ---------- */
 .carta-intro {
-    text-align: center;
-    margin: 10rem auto;  /* Rediseño: margen superior e inferior aumentado */
+  text-align: center;
+  margin: 10rem auto;  /* Rediseño: margen superior e inferior aumentado */
 }
 .carta-intro h1 {
-    font-family: 'Georgia', serif;
-    font-size: 2.25rem;  /* 36px (Rediseño: aumento de tamaño) */
-    font-weight: 700;
-    margin-bottom: 1.25rem;
-    color: #222;
+  font-family: 'Georgia', serif;
+  font-size: 2.25rem;  /* 36px (Rediseño: aumento de tamaño) */
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #222;
 }
 .carta-intro div {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
 }
 .carta-intro div img {
-    width: 10rem;
-    height: auto;
+  width: 10rem;
+  height: auto;
 }
 
 /* ---------- Subtítulo ---------- */
 .carta-subtitle {
-    font-size: 1.125rem;  /* 18px */
-    color: #555;
-    margin-bottom: 2.5rem;  /* 40px */
+  font-size: 1.125rem;  /* 18px */
+  color: #555;
+  margin-bottom: 2.5rem;  /* 40px */
 }
 
 /* ---------- Menú de Pestañas (Tabs) ---------- */
 .carta-tabs {
-    position: sticky;
-    top: var(--header-height);
-    background: #FAF9F6;
-    background-color: #FAF9F6;  /* Se repite para evitar cortes en el fondo */
-    z-index: 999;
-    padding: 0.625rem 0;   /* 10px */
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin-top: 0;         /* Evita margen extra que descoloque la barra */
+  position: sticky;
+  top: var(--header-height);
+  background: #FAF9F6;
+  background-color: #FAF9F6;  /* Se repite para evitar cortes en el fondo */
+  z-index: 999;
+  padding: 0.625rem 0;   /* 10px */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;         /* Evita margen extra que descoloque la barra */
 }
 .carta-tabs ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;       /* 20px */
-    margin: 0 auto;     /* Se sobreescribe el margen inferior anterior */
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;       /* 20px */
+  margin: 0 auto;     /* Se sobreescribe el margen inferior anterior */
+  padding: 0;
 }
 .carta-tabs ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .carta-tabs ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Georgia', serif;
-    font-size: 1.25rem;   /* 20px */
-    text-decoration: none;
-    color: #222;
-    padding: 0.3125rem 0.625rem;  /* 5px 10px */
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Georgia', serif;
+  font-size: 1.25rem;   /* 20px */
+  text-decoration: none;
+  color: #222;
+  padding: 0.3125rem 0.625rem;  /* 5px 10px */
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 .carta-tabs ul li a:hover,
 .carta-tabs ul li a:focus,
 .carta-tabs ul li a.active {
-    border-color: #D4A373;
-    transition: border-color 0.3s;
+  border-color: #D4A373;
+  transition: border-color 0.3s;
 }
 
 /* ---------- Sección de Categorías ---------- */
 .carta-category {
-    scroll-margin-top: 10rem;
+  scroll-margin-top: 10rem;
 }
 .carta-category h2 {
-    font-family: 'Georgia', serif;
-    font-size: 2.125rem;  /* 34px */
-    font-weight: 700;
-    color: rgb(60, 31, 11);
-    margin-top: 3.5rem;
-    margin-bottom: 0.625rem;  /* 10px */
+  font-family: 'Georgia', serif;
+  font-size: 2.125rem;  /* 34px */
+  font-weight: 700;
+  color: rgb(60, 31, 11);
+  margin-top: 3.5rem;
+  margin-bottom: 0.625rem;  /* 10px */
 }
 
 /* ---------- Subcategorías ---------- */
 .carta-subcategory h3 {
-    font-family: 'Georgia', serif;
-    font-size: 1.5rem;   /* 24px */
-    font-weight: bold;
-    color: #222;
-    margin-top: 1.25rem; /* 20px */
-    margin-bottom: 1.25rem; /* 20px */
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;   /* 24px */
+  font-weight: bold;
+  color: #222;
+  margin-top: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 /* ---------- Listado de Platos ---------- */
 .carta-platos {
-    display: grid;
-    grid-gap: 1.25rem;  /* 20px */
-    grid-template-columns: 1fr;  /* 1 columna por defecto (móviles) */
+  display: grid;
+  grid-gap: 1.25rem;  /* 20px */
+  grid-template-columns: 1fr;  /* 1 columna por defecto (móviles) */
 }
 
 /* ---------- Plato (Tarjeta) ---------- */
 .plato {
-    display: flex;
-    flex-direction: column;
-    padding: 0.625rem;      /* 10px */
-    border-radius: 0.3125rem; /* 5px */
-    background-color: #FAF9F6;  /* Rediseño: cambio de fondo */
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;      /* 10px */
+  border-radius: 0.3125rem; /* 5px */
+  background-color: #FAF9F6;  /* Rediseño: cambio de fondo */
 }
 .plato h4 {
-    font-family: 'Georgia', serif;
-    font-size: 1.125rem;    /* 18px (Rediseño: se reduce para consistencia) */
-    font-weight: 700;
-    margin-bottom: 0.3125rem; /* 5px */
-    color: #222;
+  font-family: 'Georgia', serif;
+  font-size: 1.125rem;    /* 18px (Rediseño: se reduce para consistencia) */
+  font-weight: 700;
+  margin-bottom: 0.3125rem; /* 5px */
+  color: #222;
 }
 .plato .descripcion {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9375rem;   /* 15px */
-    margin-bottom: 0.3125rem; /* 5px */
-    color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9375rem;   /* 15px */
+  margin-bottom: 0.3125rem; /* 5px */
+  color: #333;
 }
 .plato .precio {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9375rem;   /* 15px */
-    color: #333;
-    text-align: right;
-    display: block;
-    margin-left: 0.625rem;  /* 10px */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9375rem;   /* 15px */
+  color: #333;
+  text-align: right;
+  display: block;
+  margin-left: 0.625rem;  /* 10px */
 }
 
 /* ---------- Botón "Volver arriba" ---------- */
 .back-to-top {
-    text-align: right;
-    margin-top: 1.25rem;  /* 20px */
+  text-align: right;
+  margin-top: 1.25rem;  /* 20px */
 }
 .back-to-top a {
-    text-decoration: none;
-    font-size: 0.875rem;  /* 14px */
-    color: #222;
-    border: 1px solid #D4A373;
-    padding: 0.3125rem 0.625rem; /* 5px 10px */
-    border-radius: 0.1875rem;  /* 3px */
-    transition: background 0.3s;
+  text-decoration: none;
+  font-size: 0.875rem;  /* 14px */
+  color: #222;
+  border: 1px solid #D4A373;
+  padding: 0.3125rem 0.625rem; /* 5px 10px */
+  border-radius: 0.1875rem;  /* 3px */
+  transition: background 0.3s;
 }
 .back-to-top a:hover {
-    background: #D4A373;
-    color: #fff;
+  background: #D4A373;
+  color: #fff;
 }
 
 /* ---------- Llamada a la acción (CTA) ---------- */
 .carta-cta {
-    text-align: center;
-    margin: 3.75rem 0;  /* 60px */
+  text-align: center;
+  margin: 3.75rem 0;  /* 60px */
 }
 .carta-cta .cta-btn {
-    background: #C74F4F;
-    color: #fff;
-    padding: 0.9375rem 1.875rem;  /* 15px 30px */
-    text-decoration: none;
-    font-size: 1.25rem;  /* 20px */
-    border-radius: 0.3125rem;  /* 5px */
-    transition: background 0.3s;
+  background: #C74F4F;
+  color: #fff;
+  padding: 0.9375rem 1.875rem;  /* 15px 30px */
+  text-decoration: none;
+  font-size: 1.25rem;  /* 20px */
+  border-radius: 0.3125rem;  /* 5px */
+  transition: background 0.3s;
 }
 .carta-cta .cta-btn:hover {
-    background: #d62828;
+  background: #d62828;
 }
 
 /* ---------- Layout de Plato: Agrupación Nombre y Precio ---------- */
 .plato-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.3125rem; /* 5px */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3125rem; /* 5px */
 }
 
 /* =====================================================
-   Media Queries - Desktop (Tablets/PC)
-   ===================================================== */
+ Media Queries - Desktop (Tablets/PC)
+ ===================================================== */
 
 /* Tablets: 2 columnas en listado de platos */
 @media (min-width: 768px) and (max-width: 1199px) {
-    .carta-platos {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .carta-platos {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Desktop: 3 columnas en listado de platos */
 @media (min-width: 1200px) {
-    .carta-platos {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .carta-platos {
+      grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* =====================================================
-   Media Queries - Pantallas Pequeñas (Móviles)
-   ===================================================== */
+ Media Queries - Pantallas Pequeñas (Móviles)
+ ===================================================== */
 
 /* Ajuste específico para pantallas muy pequeñas en el menú de pestañas */
 @media (max-width: 455px) {
-    .carta-tabs ul {
-        gap: 0.1rem;  /* Reduce el espacio entre pestañas */
-    }
+  .carta-tabs ul {
+      gap: 0.1rem;  /* Reduce el espacio entre pestañas */
+  }
 }

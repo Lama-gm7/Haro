@@ -88,7 +88,119 @@
   .menu li a:hover {
     background: #444;
   }
-  
+    /* ============================================
+     Menu when it's opened
+  ============================================ */
+    /* --- [NUEVO CÓDIGO] --- */
+
+                /* --- [NUEVO CÓDIGO] --- */
+
+                /* 1. Transición de líneas del menú a 'X' (y viceversa) */
+                .menu-toggle svg line {
+                  transition: transform 0.3s ease, opacity 0.3s ease;
+                  transform-origin: center;
+
+                }
+
+                /* Al abrir (clase 'open'), las líneas forman una X negra */
+                .menu-toggle.open svg line {
+                  stroke: black;
+                }
+
+                /* Primera línea => se mueve hacia abajo y gira 45° */
+                .menu-toggle.open svg line:nth-child(1) {
+                  transform: translateY(10px) rotate(45deg);
+                }
+
+                /* Segunda línea => se hace invisible */
+                .menu-toggle.open svg line:nth-child(2) {
+                  opacity: 0;
+                }
+
+                /* Tercera línea => se mueve hacia arriba y gira -45° */
+                .menu-toggle.open svg line:nth-child(3) {
+                  transform: translateY(-10px) rotate(-45deg);
+                }
+
+                /* 2. Menú principal cerrado (por defecto) */
+                .menu {
+                  position: fixed;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: calc(85% - 5rem); /* Deja ~5rem de margen a la izquierda */
+                  background-color: rgb(247, 231, 210);
+                  transform: translateX(100%); /* Fuera de pantalla por la derecha */
+                  transition: transform 0.3s ease;
+                  z-index: 9999;
+                  list-style: none;
+                  border-radius: 0;      /* Quita esquinas redondeadas, si prefieres */
+                  display: flex;         /* Para alinear elementos en columna */
+                  flex-direction: column;
+                  padding-top: 5rem;     /* Deja espacio arriba, ajusta a tu gusto */
+                }
+
+                /* Ocultamos la versión anterior (por si hay duplicidad) */
+                .menu li a {
+                  color: #222; /* Ajusta el color de los links */
+                  padding: 1rem 2rem; /* Espaciado interno */
+                  text-decoration: none;
+                  border-bottom: 1px solid #ccc; /* Separación entre links, opcional */
+                }
+
+                /* 3. Menú abierto */
+                .menu.menu_open {
+                  transform: translateX(0); /* Desliza el menú desde la derecha */
+                }
+
+                /* Opcional: Estilo hover links del menú */
+                .menu li a:hover {
+                  background: rgba(0,0,0,0.1);
+                }
+
+                /* 4. Ajuste del botón hamburguesa en pantallas grandes */
+                /* ... si lo deseas, mantén la regla que oculta .menu-toggle en desktop */
+                @media (min-width: 768px) {
+                  .menu {
+                    /* Si en desktop deseas el menú normal, anula o ajusta. 
+                      Por ejemplo: display: flex; position: static; transform: none; etc. */
+                  }
+                  /* Si en desktop deseas ocultar el botón */
+                  .menu-toggle {
+                    display: none;
+                  }
+                }
+
+
+                /* Mantén siempre las líneas en blanco */
+                        .menu-toggle svg line {
+                          stroke: #fff; /* Color blanco en todo momento */
+                          transition: transform 0.3s ease, opacity 0.3s ease;
+                          transform-origin: center;
+                        }
+
+                        /* Al tener la clase 'open', las líneas forman la 'X' */
+                        .menu-toggle.open svg line:nth-child(1) {
+                          transform: translateY(10px) rotate(45deg);
+                        }
+
+                        .menu-toggle.open svg line:nth-child(2) {
+                          opacity: 0; /* Se oculta para que se vea solo la 'X' */
+                        }
+
+                        .menu-toggle.open svg line:nth-child(3) {
+                          transform: translateY(-10px) rotate(-45deg);
+                        }
+
+                        /* Si deseas que la línea 2 NO se oculte (y ver 3 líneas en la 'X'),
+                          elimina la regla de opacity: 0 en nth-child(2). Sin embargo,
+                          la 'X' típica se hace con solo 2 líneas visibles. */
+
+                        /* Asegúrate también de que el .menu_open y layout en móvil/desktop
+                          siguen tu código anterior (height: 100vh, etc.) */
+
+
+
   /* ============================================
      Sección Hero
   ============================================ */
@@ -417,3 +529,35 @@ footer p a[href="aviso-legal.html"] {
       flex: 1;
     }
   }
+  /* ===== 2. Ajustes para escritorio ===== */
+@media (min-width: 768px) {
+
+  header .logo img {
+    width: 100px; /* Logo pequeño */
+    height: auto;
+  }
+  
+  /* Restaura el menú en línea */
+  .menu {
+    position: static;
+    transform: none;     /* Quita el translateX */
+    width: auto;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;      /* Quita el espacio superior extra */
+    overflow: visible;
+    border-radius: 0;
+  }
+  .menu li a {
+    color: #fff;         /* Si quieres los links blancos en desktop */
+    border-bottom: none; /* Elimina la línea divisoria */
+    padding: 10px 15px;  /* Como antes */
+  }
+  /* Oculta el botón hamburguesa en desktop */
+  .menu-toggle {
+    display: none;
+  }
+}
+
